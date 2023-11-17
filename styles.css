@@ -1,0 +1,222 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    Background: #000000;
+    max-width: 485px;
+    margin: auto;
+}
+body{
+    background: #ffffff;
+}
+nav{
+    background: #000000;
+    padding: 10px;
+}
+li {
+    display: inline;
+    position: relative;
+    left: 55px;
+    top: 0px;
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+h1{
+    font-size: 3em;
+    color: #007d7b;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+p{
+    font-size: 1.25em;
+    margin: auto 15px;
+}
+a:hover{
+    color: #007d7b;
+    background-color: #ffffff;
+    padding: 5px;
+}
+a[href="#top"] {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    border: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+a[href="#top"]:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+#gallery p{
+    padding-bottom: 20px;
+}
+figure{
+    margin: 0px 30px;
+}
+figcaption{
+    position: relative;
+    bottom: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1em;
+}
+figure:first-child figcaption, figure:nth-child(3) figcaption, figure:nth-child(7) figcaption{
+    bottom: 30px;
+    position: relative;
+}
+figure:nth-child(4) figcaption, figure:nth-child(5) figcaption{
+    color: #000000;
+    position: relative;
+    bottom: 560px;
+}
+figure:nth-child(6) figcaption{
+    color: #000000;
+    position: relative;
+    bottom: 30px;
+}
+figure:nth-child(n+8) figcaption{
+    color: #000000;
+    position: relative;
+    bottom: 250px;
+}
+figure:nth-child(12) figcaption{
+    color: #ffffff;
+}
+#contact, form, footer {
+    background-color: #000000;
+}
+#contact h2, #contact p{
+    color: #ffffff;
+    text-align: center;
+}
+#contact h2{
+    padding-top: 20px;
+}
+form{
+    padding-top: 30px;
+}
+input, textarea {
+    font-size: 1em;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+label {
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: relative;
+    left: 50px;
+
+}
+::-webkit-input-placeholder {
+    color:#007d7b;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+input[type=submit]{
+    background-color: #007d7b;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: none;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+footer{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bolder;
+}
+@media screen and (min-width: 880px) {
+    #img {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    html{
+        max-width: 880px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    li{
+        position: relative;
+        left: 250px;
+    }
+    figure:nth-child(2) figcaption, figure:nth-child(n + 8) figcaption {
+        position: relative;
+        bottom: 260px;
+    }
+    figure:nth-child(4) figcaption{
+        position: relative;
+        bottom: 600px;
+    }
+    figure {
+        margin: 5px;
+    }
+    label {
+        position: relative;
+        left:90px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    #img {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    html{
+        max-width: 1300px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    li{
+        position: relative;
+        left: 950px;
+    }
+    figure:nth-child(2) figcaption, figure:nth-child(n + 8) figcaption {
+        position: relative;
+        bottom: 260px;
+    }
+    figure:nth-child(4) figcaption, figure:nth-child(5) figcaption{
+        position: relative;
+        bottom: 600px;
+    }
+    figure {
+        margin: 5px;
+    }
+    label {
+        position: relative;
+        left:130px;
+    }
+}
